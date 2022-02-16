@@ -1,5 +1,5 @@
 /**
- * Java 1. Home work №1
+ * Java 1. Home work №2
  *
  * @author Svetlana Sushentceva
  * @version 12.02.2022
@@ -15,9 +15,9 @@ public class HomeWorkTwo {
         System.out.println(checkNumber(-35));
         printString("строчка", 5);
         System.out.println(determineLeapYear(2000)); // true
-        System.out.println(determineLeapYear(400)); // true
-        System.out.println(determineLeapYear(600)); // false
-        System.out.println(determineLeapYear(900)); // false
+//        System.out.println(determineLeapYear(400)); // true
+//        System.out.println(determineLeapYear(600)); // false
+//        System.out.println(determineLeapYear(900)); // false
     }
 
     static boolean checkSumSign(int a, int b) {

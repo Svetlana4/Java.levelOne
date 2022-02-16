@@ -17,11 +17,6 @@ public class HomeWorkOne {
         int a = 5;
         int b = 8;
         int c = a + b;
-//        if (c >= 0) {
-//            System.out.println("Сумма положительная");
-//        }else {
-//            System.out.println("Сумма отрицательная");
-//        }
         System.out.println(c >= 0? "Сумма положительная" : "Сумма отрицательная");
     }
     public static void printColor() {
