@@ -33,10 +33,9 @@ public class HomeWorkFive {
                 "ssd@mail.ru", "8 344 567 23 56", 55000, 56);
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i].age > 40) {
+            if (array[i].getAge() > 40) {
                 array[i].PrintToConsole();
             }
         }
-
     }
 }
