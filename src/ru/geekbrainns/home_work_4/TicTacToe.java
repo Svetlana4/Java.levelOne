@@ -1,5 +1,5 @@
 /**
- * Java 1. Home work №3
+ * Java 1. Home work №4
  *
  * @author Svetlana Sushentceva
  * @version 20.02.2022
@@ -99,43 +99,55 @@ public class TicTacToe<x> {
     }
 
     boolean checkWin(char ch) {
-        for (int x = 0; x < 3; x++) {
-            boolean check = true;
-            for (int y = 0; y < 3; y++) {
-                if (table[x][y] != ch) {
-                    check = false;
-                    break;
-                }
-            }
-            if (check) {
+        for (int i = 0; i < 3; i++) {
+            if ((table[i][0] == ch && table[i][1] == ch && table[i][2] == ch) ||
+               (table[0][i] == ch && table[1][i] == ch && table[2][i] == ch))
                 return true;
-            }
         }
-        for (int y = 0; y < 3; y++) {
-            boolean check = true;
-            for (int x = 0; x < 3; x++) {
-                if (table[x][y] != ch) {
-                    check = false;
-                    break;
-                }
-            }
-            if (check) {
-                return true;
-            }
+        if ((table[0][0] == ch && table[1][1] == ch && table[2][2] == ch) ||
+           (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch)) {
+            return true;
         }
-//
-        boolean checkDiag1 = true;
-        boolean checkDiag2 = true;
-        for (int x = 0; x < 3; x++) {
-            if (table[x][x] != ch) {
-                checkDiag1 = false;
-            }
-            if (table[2 - x][x] != ch) {
-                checkDiag2 = false;
-            }
-        }
-        return checkDiag1 || checkDiag2;
+        return false;
+
     }
+//        for (int x = 0; x < 3; x++) {
+//            boolean check = true;
+//            for (int y = 0; y < 3; y++) {
+//                if (table[x][y] != ch) {
+//                    check = false;
+//                    break;
+//                }
+//            }
+//            if (check) {
+//                return true;
+//            }
+//        }
+//        for (int y = 0; y < 3; y++) {
+//            boolean check = true;
+//            for (int x = 0; x < 3; x++) {
+//                if (table[x][y] != ch) {
+//                    check = false;
+//                    break;
+//                }
+//            }
+//            if (check) {
+//                return true;
+//            }
+//        }
+////
+//        boolean checkDiag1 = true;
+//        boolean checkDiag2 = true;
+//        for (int x = 0; x < 3; x++) {
+//            if (table[x][x] != ch) {
+//                checkDiag1 = false;
+//            }
+//            if (table[2 - x][x] != ch) {
+//                checkDiag2 = false;
+//            }
+//        }
+//        return checkDiag1 || checkDiag2;
+
 
 
 //        if (table[0][0] == ch && table[0][1] == ch && table[0][2] == ch) return true;
