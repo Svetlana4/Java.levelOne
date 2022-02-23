@@ -7,11 +7,11 @@
 package ru.geekbrainns.home_work_5;
 
 class Employee {
-    String fullName;
-    String position;
-    String email;
-    String phone;
-    int salary;
+    private String fullName;
+    private String position;
+    private String email;
+    private String phone;
+    private int salary;
     int age;
 
     Employee(String fullName, String position, String email, String phone, int salary, int age) {
@@ -22,17 +22,22 @@ class Employee {
         this.salary = salary;
         this.age = age;
     }
-//
-//    String person() {
-//        return " vau"
-//    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     @Override
     public String toString() {
        return fullName + ", " + position + ", " + email + ", " + salary + ", " + age;
     }
 
-    void printToConsole() {
+    public void PrintToConsole() {
         System.out.println(this);
     }
+
 }
