@@ -9,16 +9,6 @@ package ru.geekbrainns.home_work_5;
 public class HomeWorkFive {
 
     public static void main(String[] args) {
-//        Employee employee = new Employee("Sidorov Ivan Petrovich", "manager",
-//                "khhg-54@mail.ru", "8 344 567 80 67", 45000, 50);
-//        employee.fullName = "Sidorov Ivan Petrovich";
-//        employee.position = "manager";
-//        employee.email = "khhg-54@mail.ru";
-//        employee.phone = "8 344 567 80 67";
-//        employee.salary = 45000;
-//        employee.age = 45;
-//        System.out.println(employee.toString());
-
 
         Employee[] array = new Employee[5] ;
         array[0] = new Employee("Petrova Anna Ivanovna", "manager",
@@ -32,9 +22,9 @@ public class HomeWorkFive {
         array[4] = new Employee("Semenov Ivan Ivavich", "manager",
                 "ssd@mail.ru", "8 344 567 23 56", 55000, 56);
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i].getAge() > 40) {
-                array[i].PrintToConsole();
+        for (Employee employee : array) {
+            if (employee.getAge() > 40) {
+                System.out.println(employee);
             }
         }
     }

@@ -14,7 +14,7 @@ class Employee {
     private int salary;
     private int age;
 
-    Employee(String fullName, String position, String email, String phone, int salary, int age) {
+    public Employee(String fullName, String position, String email, String phone, int salary, int age) {
         this.fullName = fullName;
         this.position = position;
         this.email = email;
@@ -27,17 +27,15 @@ class Employee {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
 
     @Override
     public String toString() {
-       return fullName + ", " + position + ", " + email + ", " + salary + ", " + age;
+       return (fullName + ", " + position + ", " + email + ", " + salary + ", " + age);
     }
 
-    public void PrintToConsole() {
-        System.out.println(this);
-    }
+
 
 }
