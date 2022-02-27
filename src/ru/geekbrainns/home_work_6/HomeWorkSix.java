@@ -7,15 +7,12 @@
 
 package ru.geekbrainns.home_work_6;
 
-//import com.sun.org.apache.xerces.internal.impl.dv.xs.DoubleDV;
-
 public class HomeWorkSix {
     public static void main(String[] args) {
 //        IAnimal[] animals = {
 //                new Cat(200),
 //                new Dog(500, 10)
 //        };
-
         Animal cat = new Cat(200);
         Animal dog = new Dog(500, 10);
         dog.run(450);
