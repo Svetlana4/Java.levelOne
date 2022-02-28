@@ -17,10 +17,6 @@ abstract class Animal implements IAnimal {
         this.maxSwimLength = maxSwimLength;
     }
 
-//    public String getType() {
-//        return type;
-//    }
-
 //    @Override
     public void run(int length) {
         if (length > maxRunLength) {
