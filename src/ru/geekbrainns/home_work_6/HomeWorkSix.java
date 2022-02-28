@@ -13,6 +13,7 @@ public class HomeWorkSix {
 //                new Cat(200),
 //                new Dog(500, 10)
 //        };
+
         Animal cat = new Cat(200);
         Animal dog = new Dog(500, 10);
         dog.run(450);

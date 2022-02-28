@@ -17,19 +17,24 @@ abstract class Animal implements IAnimal {
         this.maxSwimLength = maxSwimLength;
     }
 
+//    public String getType() {
+//        return type;
+//    }
+
+//    @Override
     public void run(int length) {
-        if (length == maxRunLength) {
-            System.out.println("ran");
+        if (length > maxRunLength) {
+            System.out.println(type + " couldn't run " + length);
         } else {
-            System.out.println(type + " ran " + length + " m.");
+            System.out.println(type + " successfully ran " + length + " m.");
         }
     }
-
+//    @Override
     public void swim(int length) {
-        if (length == maxRunLength) {
-            System.out.println("swam");
+        if (length > maxRunLength) {
+            System.out.println(type + " couldn't swim " + length);
         } else {
-            System.out.println(type + " swam " + length + " m.");
+            System.out.println(type + " successfully swam " + length + " m.");
         }
     }
 
