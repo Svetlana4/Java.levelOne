@@ -26,8 +26,11 @@ public class HomeWorkSeven {
             } else {
                 System.out.println("Cat: " + cat.getName() + " didn't eat");
             }
-
         }
+        System.out.println(plate);
+        plate.addFood(2);
+
+//        for ()
         System.out.println(plate);
     }
 }

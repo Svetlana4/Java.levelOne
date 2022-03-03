@@ -19,7 +19,7 @@ class Plate {
     }
 
     public void addFood(int i) {
-        this.food += food;
+        this.food += i;
     }
 
         @Override
