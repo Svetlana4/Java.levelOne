@@ -30,7 +30,14 @@ public class HomeWorkSeven {
         System.out.println(plate);
         plate.addFood(2);
 
-//        for ()
+        for (Cat cat : cats) {
+            if (cat.getAppetite() <= plate.getFood()) {
+                cat.eat(plate);
+                System.out.println("Cat: " + cat.getName() + " ate");
+            } else {
+                System.out.println("Cat: " + cat.getName() + " didn't eat");
+            }
+        }
         System.out.println(plate);
     }
 }
