@@ -19,19 +19,16 @@ public class HomeWorkSeven {
         Plate plate = new Plate(20);
         System.out.println(plate);
 
-        for (Cat cat : cats) {
-            if (cat.getAppetite() <= plate.getFood()) {
-                cat.eat(plate);
-                System.out.println("Cat: " + cat.getName() + " ate");
-            } else {
-                System.out.println("Cat: " + cat.getName() + " didn't eat");
-            }
-        }
-        System.out.println(plate);
+        feedAllCats(cats, plate);
         plate.addFood(2);
+        feedAllCats(cats, plate);
+        System.out.println("All cats are full");
 
+    }
+
+    static void feedAllCats(Cat[] cats, Plate plate) {
         for (Cat cat : cats) {
-            if (cat.getAppetite() <= plate.getFood()) {
+            if (cat.getAppetite() <= plate.getFood() && !cat.getFullness()) {
                 cat.eat(plate);
                 System.out.println("Cat: " + cat.getName() + " ate");
             } else {

@@ -24,10 +24,6 @@ class Cat {
         return fullness;
     }
 
-    public boolean isFullness(){
-        return fullness;
-    }
-
     public void eat(Plate plate) {
         if (this.fullness) {
             return;
